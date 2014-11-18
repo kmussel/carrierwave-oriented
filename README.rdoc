@@ -1,5 +1,5 @@
-= CarrierWave for Oriented
-
+= CarrierWave for Oriented 
+(https://github.com/kmussel/oriented)
 
 This gem adds support for Oriented to CarrierWave, see the CarrierWave
 documentation for more detailed usage instructions.
