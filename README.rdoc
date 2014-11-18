@@ -1,0 +1,30 @@
+= CarrierWave for Oriented
+
+
+This gem adds support for Oriented to CarrierWave, see the CarrierWave
+documentation for more detailed usage instructions.
+
+= Installation
+
+    gem install carrierwave-oriented
+
+Using bundler:
+
+    gem 'carrierwave-oriented', :require => 'carrierwave/oriented'
+
+= Usage
+
+    require 'carrierwave/oriented'
+
+    class ImageUploader < CarrierWave::Uploader::Base
+      include CarrierWave::RMagick
+    end
+
+    class Image
+      include Oriented::Vertex
+
+      property :id
+      property :name
+
+      mount_uploader :source, ImageUploader
+    end
